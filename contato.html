@@ -40,28 +40,28 @@
 
 <form class="row g-3 m-lg-2">
   <div class="col-md-6 ">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
+    <label onclick="popularinput('inputEmail4', 'Email')" for="inputEmail4" class="form-label" id="labelEmail">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" onmousedown="colorLabel()">
   </div>
   <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Senha</label>
-    <input type="password" class="form-control" id="inputPassword4">
+    <label onclick="popularinput('inputPassword4', 'Senha')" for="inputPassword4" class="form-label" id="labelSenha">Senha</label>
+    <input type="password" class="form-control" id="inputPassword4" onmousedown="colorLabel2()">
   </div>
   <div class="col-12">
-    <label for="inputAddress" class="form-label">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Rua:...">
+    <label onclick="popularinput('inputAddress', 'Endereço')" for="inputAddress" class="form-label" id="labelEndereço">Endereço</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Rua:..." onmousedown="colorLabel3()">
   </div>
   <div class="col-12">
-    <label for="inputAddress2" class="form-label">Complemento</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, ...">
+    <label onclick="popularinput('inputAddress2', 'Complemento')" for="inputAddress2" class="form-label" id="labelComplemento">Complemento</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, ..." onmousedown="colorLabel5()">
   </div>
   <div class="col-md-6">
-    <label for="inputCity" class="form-label">Cidade</label>
-    <input type="text" class="form-control" id="inputCity">
+    <label onclick="popularinput('inputCity', 'Cidade')" for="inputCity" class="form-label" id="labelCidade">Cidade</label>
+    <input type="text" class="form-control" id="inputCity" onmousedown="colorLabel4()">
   </div>
   <div class="col-md-4">
-    <label for="inputState" class="form-label">Estado</label>
-    <select id="inputState" class="form-select">
+    <label for="inputState" class="form-label"id="labelEstado">Estado</label>
+    <select id="inputState" class="form-select" onmousedown="colorLabel7()">
       <option selected>SP</option>
       <option selected>RJ</option>
       <option selected>ES</option>
@@ -70,8 +70,8 @@
     </select>
   </div>
   <div class="col-md-2">
-    <label for="inputZip" class="form-label">Cep</label>
-    <input type="text" class="form-control" id="inputZip">
+    <label onclick="popularinput('inputZip', 'CEP')" for="inputZip" class="form-label" id="labelCep">Cep</label>
+    <input type="text" class="form-control" id="inputZip" onmousedown="colorLabel6()">
   </div>
   <div class="col-12">
     <div class="form-check">
@@ -81,8 +81,11 @@
       </label>
     </div>
   </div>
-  <div class="col-12">
+  <div class="col-1">
     <button type="submit" class="btn btn-primary">LOGIN</button>
+  </div>
+    <div class="col-1">
+    <button type="submit" class="btn btn-primary" id="button" onmousedown="testButton()">LIMPAR</button>
   </div>
 </form>
 
@@ -105,5 +108,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script src="teste.js"></script>
 </body>
 </html>
